@@ -1,0 +1,140 @@
+
+:root{
+    --font:white;
+    --common-fontfamily:'Dosis', sans-serif;
+}
+
+/* //////////////////////////////////////////////// Mobile section ////////////////////////////////////////////////////////// */
+
+@media  (min-width:30px) and (max-width:700px) {
+
+    html{
+        font-size: 45%;
+        width: 100%;
+    }
+
+    body{
+        display: grid;
+        grid-template-columns: 100vw; 
+    }
+
+    /* ---------------- nav bar code start from here ----------------  */
+
+    nav{
+        grid-template-rows: 0.6fr 0.4fr; 
+        grid-template-columns: 1fr;
+        font-size: var(--common-fontfamily);
+    }
+    
+    .nav-btn{justify-content:center;}
+
+   /* ---------------- home image code start from here ----------------  */
+    .title{
+        margin-bottom: 5rem;
+    }
+  .descp p{
+    color: rgb(231, 231, 231);
+    }
+
+   
+
+
+   /* ---------------- About us section  code start from here ----------------  */
+ 
+  .about-infoimg{
+    display: none;}
+   .personal-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .about-section-title{
+        margin-top: 5rem;
+    }
+    .about-info-center-line{
+        display: none;
+    }
+    .about-infoimg{
+        display: none;
+    }
+    .para{
+        width: 90%;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    .para3{
+        display: none;
+    }
+
+   /* ---------------- Contact us section  code start from here ----------------  */
+   .contact-us-section{
+    flex-direction: column;
+}
+.conatact-Quote-section{
+    padding: 6rem 4rem;
+    font-size: 6rem;
+}
+  .container {
+    padding-left: 5rem;
+    width: 80%;
+  }
+}
+
+  /* ---------------- return button section  code start from here ----------------  *
+
+
+/* //////////////////////////////////////////////// Tablet section ////////////////////////////////////////////////////////// */
+
+@media  (min-width:500px) and (max-width:800px){
+
+    html{
+       font-size: 55%;
+    }
+
+    body{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 8rem  80vh 100vh 1fr 100vh;
+        
+    }
+
+/* ---------------- nav bar code start from here ----------------  */
+ 
+.logo img{height: 10rem;}
+
+
+/* ---------------- About section code start from here ----------------  */
+.personal-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-infoimg{
+    display: none;}
+
+.para{width: 100%; font-size: 2rem;line-height: 4rem; }
+/* ---------------- Contact section code start from here ----------------  */
+.contact-us-section{
+    flex-direction: column;
+}
+
+.container {
+        display: flex;
+        width: 60%;
+    }
+input[type=text], select, textarea {
+        width: 100%;
+        
+    }
+.col-75 {
+        width: 150%;
+        margin-top: 6px;
+      }
+.conatact-Quote-section{
+        padding: 8rem 0rem;
+        width: 80%;
+        }
+    .conatact-Quote-section span{font-size: 7rem;}
+}
+/* @media  screen{} */
